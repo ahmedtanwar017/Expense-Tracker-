@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser");
 
 const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes")
+const expenseRoutes = require("./routes/expenseRoutes")
 
 dotenv.config();
 
@@ -27,6 +28,7 @@ app.use(
 
 // Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/expenses", expenseRoutes)
 
 const PORT = process.env.PORT || 4000;
 

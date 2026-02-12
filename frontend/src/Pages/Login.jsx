@@ -93,7 +93,7 @@ function Login() {
 
         <p className="text-center mt-4">
           Don't have an account?
-          <a href="/register" className="text-blue-500 ml-1">
+          <a href="/register" className="text-blue-500 ml-1 hover:underline">
             Register
           </a>
         </p>
